@@ -55,7 +55,7 @@
       "required": true,
       "value": "1864894033"
     },
-    "START_IMG": {
+    "PICS": {
       "description": "Telegraph link of the pic which you want to set as the start pic of your bot",
       "required": false
     },
