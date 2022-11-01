@@ -1,7 +1,7 @@
 import asyncio
 
 from helpers.filters import command
-from config import BOT_NAME as bn, BOT_USERNAME as bu, CHANNEL_UPDATES, SUPPORT_GROUP, OWNER_USERNAME as me, START_IMG
+from config import BOT_NAME as bn, BOT_USERNAME as bu, CHANNEL_UPDATES, SUPPORT_GROUP, OWNER_USERNAME as me, PICS
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -10,7 +10,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgUAAx0CZp7eIAACpv1jYIbWhI9JPBkvLLSLwPxc-8yu2QACDgcAAruXGFbarx8_grqJYh4E")
     await message.reply_photo(
-        photo=f"{START_IMG}",
+        photo=f"{PICS}",
         caption=f""" ** Hey {message.from_user.mention()} , 🥀\n\n
 ๏ This is [{bn}](t.me/{bu}) ,  !
 ➻ The most Powerful telegram music  bot with some awesome and useful features.
